@@ -1,0 +1,25 @@
+#bar{
+	position: relative;
+	width: 200px;
+	height: 20px;
+	text-align: center;
+	background-color: black;
+	display: block;
+	
+}
+.yes{
+	position: absolute;
+	width:50%;
+	left: 0;
+	color: white;
+	display: block;
+	background-color:gray;
+}
+
+body{
+	width:  100%;
+}
+
+.center {
+	text-align: center;
+}

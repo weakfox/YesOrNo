@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>选择障碍患者福音</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1>选择障碍患者福音</h1>
+
+<div>
+	我要 <input id="to_do" type="text" placeholder="干什么"/>
+</div>
+
+<div id="yes_div">
+	<h2>为什么要?</h2>
+	<input id="yes_reason" type="text" placeholder="想要做这件事情的理由"/>
+	<select id="yes_weight">
+		<option value="0">选择权重</option>
+		<option value="3">很重要(3)</option>
+		<option value="2">较一般(2)</option>
+		<option value="1">不重要(1)</option>
+	</select>
+	<button id="add_yes_btn">添加</button>
+	
+	<ul id="yes_list"></ul>
+	<p>权重: <span id="yes_total">0</span></p>
+</div>
+
+<div id="no_div">
+	<h2>为什么不要?</h2>
+	<input id="no_reason" type="text" placeholder="不要做这件事情的理由"/>
+	<select id="no_weight">
+		<option value="0">选择权重</option>
+		<option value="3">很重要(3)</option>
+		<option value="2">较一般(2)</option>
+		<option value="1">不重要(1)</option>
+	</select>
+	<button id="add_no_btn">添加</button>
+	<ul id="no_list"></ul>
+	<p>权重: <span id="no_total">0</span></p>
+</div>
+
+<span id="bar" style="display:none;">
+	<em class="yes">Do</em>
+</span>
+
+<button id="show_result_btn" style="display:none;">获取结果</button>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="choice.js"></script>
+</body>
+</html>
